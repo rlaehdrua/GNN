@@ -1,0 +1,11 @@
+﻿model,type,PR-AUC,Macro-F1,time(s)
+HeteroSAGE+ (3-seed ensemble),ensemble,0.5041,0.6508,
+Combined (6-model ensemble),ensemble,0.4946,0.6799,
+RGCN (3-seed ensemble),ensemble,0.4824,0.6641,
+RGCN-tuned,tuned,0.4696,0.6776,36.2837
+RGCN,single,0.4623,0.6705,24.7821
+GraphSAGE,single,0.4441,0.6725,28.4629
+SimpleCARE,single,0.4102,0.6594,69.2081
+GCN,single,0.3912,0.6484,30.0573
+HAN,single,0.3882,0.6512,140.9225
+GAT,single,0.3572,0.6222,21.377
