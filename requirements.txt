@@ -1,5 +1,0 @@
-Streamlit
-Matplotlib
-Plotly
-Pandas
-networkx
