@@ -1,0 +1,61 @@
+{
+  "n_nodes": 36157,
+  "n_features": 128,
+  "feature_blocks": {
+    "basic": 22,
+    "agg": 17,
+    "text": 64,
+    "graph": 7,
+    "neighbor": 18
+  },
+  "edges": {
+    "review__rur__review": 23488,
+    "review__burst__review": 84,
+    "review__sburst__review": 27190,
+    "review__pday__review": 584,
+    "review__upur__review": 12000,
+    "review__sim__review": 3324
+  },
+  "fraud_ratio": 0.15369084477424622,
+  "sampling": {
+    "start": "2013-01-01",
+    "end": "2014-12-31",
+    "top_n_prod": 30
+  },
+  "burst_days": 1,
+  "burst_min_cluster": 15,
+  "short_burst": {
+    "days": 2,
+    "min_cluster": 5,
+    "thresh": 200
+  },
+  "prodday": {
+    "days": 1,
+    "min_cluster": 20
+  },
+  "upur": {
+    "fraud_ratio_threshold": 0.3,
+    "max_users_per_prod": 200,
+    "max_pairs_per_prod": 3000
+  },
+  "graph_feats_columns": [
+    "in_burst_strict",
+    "in_short_burst",
+    "in_prodday",
+    "in_upur",
+    "user_min_interval_log_z",
+    "user_std_interval_log_z",
+    "user_max_reviews_per_day_z"
+  ],
+  "use_text_sim": true,
+  "neighbor_feats_info": {
+    "n_edge_types": 6,
+    "feats_per_type": 3,
+    "feat_names": [
+      "frac_fraud",
+      "log_ntrain",
+      "has_lbl"
+    ],
+    "note": "Stage 7에서 data_v2에 추가 (leak-safe, train_mask 기준)"
+  }
+}
