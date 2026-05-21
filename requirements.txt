@@ -3,3 +3,5 @@ Matplotlib
 Plotly
 Pandas
 networkx
+numpy
+pyarrow
